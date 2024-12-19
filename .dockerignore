@@ -1,0 +1,10 @@
+vendor
+.*
+Dockerfile
+Makefile
+storage/**/*
+README.md
+tests
+phpunit.xml
+storage/**/*
+!storage/**/.gitignore
