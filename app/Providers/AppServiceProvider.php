@@ -2,6 +2,9 @@
 
 namespace App\Providers;
 
+use AsiaYo\adapters\mock\ExchangeRateDao;
+use AsiaYo\ports\GetExchangeRate;
+use Illuminate\Contracts\Foundation\Application;
 use Illuminate\Support\ServiceProvider;
 
 class AppServiceProvider extends ServiceProvider
@@ -11,7 +14,7 @@ class AppServiceProvider extends ServiceProvider
      */
     public function register(): void
     {
-        //
+        $this->app->scoped(GetExchangeRate::class, fn (Application $app) => new ExchangeRateDao);
     }
 
     /**
