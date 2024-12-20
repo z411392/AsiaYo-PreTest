@@ -44,9 +44,8 @@ class NormalizeOrderTest extends TestCase
     public function test_指定幣別無法處理時應拋出例外(): void
     {
         $this->expectException(ExchangeRateNotDefined::class);
-        $given = '2000';
         $this->normalizeOrderInfo->__invoke([
-            'amount' => $given,
+            'amount' => '2000',
             'currency' => CurrencyCodes::JPY,
         ]);
     }
