@@ -8,7 +8,7 @@ use AsiaYo\modules\OrderManaging\presentation\validators\NormalizingOrderInfo;
 use Illuminate\Support\Arr;
 use Throwable;
 
-class NormalizingOrderInfoController
+class NormalizeOrderInfoController
 {
     public function __invoke(NormalizingOrderInfo $request)
     {

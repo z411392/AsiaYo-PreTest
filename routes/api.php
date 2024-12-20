@@ -7,4 +7,4 @@ use Illuminate\Support\Facades\Route;
 //     return $request->user();
 // })->middleware('auth:sanctum');
 
-Route::post('/orders', 'AsiaYo\modules\OrderManaging\presentation\controllers\NormalizingOrderInfoController');
+Route::post('/orders', 'AsiaYo\modules\OrderManaging\presentation\controllers\NormalizeOrderInfoController');

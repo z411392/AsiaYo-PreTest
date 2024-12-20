@@ -10,7 +10,7 @@ use Illuminate\Contracts\Foundation\Application;
 use Illuminate\Testing\Fluent\AssertableJson;
 use Tests\TestCase;
 
-class NormalizingOrderTest extends TestCase
+class NormalizeOrderTest extends TestCase
 {
     protected function setup(): void
     {
