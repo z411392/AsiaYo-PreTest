@@ -21,7 +21,7 @@ class NormalizeOrderInfo
     }
 
     /**
-     * @param  array{amount:int,currency:string}  $query
+     * @param  array{amount:string,currency:string}  $query
      */
     public function __invoke(array $query)
     {
